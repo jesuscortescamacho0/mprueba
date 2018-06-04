@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+
+<style>
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+/*color de fonndo que se quita cuando das clic en algo*/
+/*aqui inicia responsib*/
+     {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="%C2%BFquienes%20somos.html">¿Quienes somos?</a>
+  <a href="#">Objetivos</a>
+  <a href="#">Proyectos</a>
+  <a href="PAGINA%20ORIGINAL.HTML">CERRAR SECION<a/>
+  
+  
+</div>
+
+<div id="main">
+<center> <h2>SECION ADMINISTRADOR MAESTRO'INSTITUCION CONALEP NAUCALPAN 1'</h2></center> 
+<div style="background-color:#f1f1f1;padding:15px;">
+  <CENTER> <h6>
+   <p>Managed Documents</p>
+  </h6> </CENTER>
+</div>
+<center><button>buscar</button><input type="text" size="80" maxlength="40" value="busqueda" name="busqueda"></center>
+</p>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+
+
+
+<style>
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd; 
+}
+
+div.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+}
+</style>
+
+</head>
+<body>
+
+
+<button class="accordion">Section 1</button>
+<div class="panel">
+  <p>enceder notificaciones.</p>
+</div>
+
+<center>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
+</center>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3" style="background-color:lavender;"> configuraciones.
+    </div>
+    <div class="col-sm-6" style="background-color:lavenderblush;"><center> <button>descargar convenio actual</button></center></div>
+    <div class="col-sm-3" style="background-color:lavender;">ENVIAR UN MENSAJE.</div>
+      <textarea name="comentarios" rows="3" cols="40">Escribe aquí tus comentarios</textarea>
+    <center><h3>BIENVENIDO A NUESTRA EMPRESA</h3></center>
+
+  </div>
+</div>
+
+<center><p>Donde te podremos ayudar a solucionar tus problemas </p></center> <center><p> administrativos</p></center>                           
+<div class="right">
+    <img src="GenerateImage.jpg"><CENTER> <h2 >Misión</h2></CENTER>
+<center> <p>Desarrollar TIC´S con la</p> </center>
+<center><p> finalidad de implementar </p></center> 
+<center><p> innovaciones en </p></center> 
+<center> <p> áreas administrativas</p></center>
+
+<center><img src="mision.png" width="178" height="129"></center> 
+    <h2>CONALEP</h2> 
+
+<h2><center><p> POLÍTICAS DE CALIDAD</p></center></h2>
+<center> <img src="calidad.jpg" width="178" height="129"></center>
+<center>Administración digital</center>
+<center>está enfocado en cumplir con los</center>
+<center>estereotipos y normas de control de</center>
+<center>calidad del cliente asegurando la </center>
+<center>confiabilidad y confidencialidad de información</center>      
+
+
+</p>
+<img src="NAUCALPAN1_02.jpg" width="178" height="129"><h2> <center><p> Vision</p></center></h2>
+<center><img src="vision.jpg" width="178" height="129"></center>
+<center><p>Ser reconocidos en distintas comunidades</p></center>
+<center><p>de trabajo administrativo por la eficaz de nuestros productos.</p></center>  
+<p><img src="images.jpg" width="178" height="129"></p>
+<h2> <center><p>valores</p></center></h2>
+<p><img src="empresa.png" width="178" height="129"> </p>
+<center>
+<center><img src="valores.jpg" width="178" height="129"></center>
+<center><p>Colaboración:</p></center>
+<center><p>aporta ideas según nuestras</p>
+</center> <p> Cada miembro de la empresa</p></center>
+<center><p>capacidades y habilidades.</p></center>
+
+<h2> <center><p>Responsabilidad y compromiso:</p></center></h2>
+<center><p>Cada integrante está comprometido</p></center>
+<center><p>con la entrega </p></center>
+<center><p>en tiempo y forma de tareas asignadas por el líder.</p></center> 
+
+<h2><center><p>Respeto:</p></center></h2>
+<center><p>Valor resaltado entre</p></center>
+<center><p>cada integrante para llevar un buen</p></center>
+<center><p>trabajo y convivencia.</p></center>
+
+<h2> <center><p>Igualdad:</p></center></h2>
+<center><p>Sin importar cargos en</p></center>
+<center><p>la empresa se valoran</p></center>
+<center><p>las aportaciones</p></center>
+<center><p>de cada miembro. </p></center>
+
+<h2> <center><p>Tolerancia:</p></center></h2>
+<center><p>Se escucha de manera respetuosa las</p></center>
+<center><p>ideologías de cada</p></center>
+<center><p>miembro del equipo tanto</p></center>
+<center><p>como la del cliente.</p></center>    
+
+
+<h2> <center><p>Comunicación:</p></center> </h2>
+<center><p>Se comunican situaciones de</p></center>
+<center><p>cualquier tipo para actuar</p></center>   
+<center><p>según el contexto.</p></center> 
+
+<h2> <center><p>Innovación:</p></center> </h2>
+<center><p>De manera creativa surgen</p></center>
+<center><p>ideas para innovar procesos</p></center>
+<center><p>hacia el área que nos dedicamos.</p></center>   
+<center><p></p></center>
+
+
+
+
+
+
+
+
+
+<h2>
+<center> <p> FUNDACIÓN</p></center></h2>
+<center> <p><img src="fundacion.jpg width ="178" height="129""> </p></center>
+
+<center><p> AD (Administración Digital)</p></center> 
+<center><p>fue fundada el día</p></center>  
+<center><p>14 de octubre del año 2017 </p></center>
+<center><p>y se categoriza como consultoría;</p></center>
+<center><p>es fundada por: </p></center>
+<center><p>Teresa Becerril Ortíz, Jesús Cortes Camacho,</p></center>
+<center><p>Jaqueline Gómez Canseco, Jacqueline Rodríguez Cervantes</p></center>
+<center><p>y Sara Ortíz García </p></center>
+<center><p>alumnos del Plantel Conalep Naucalpan I,</p></center>
+ <center><p>para formar parte de </p></center>
+ <center><p>una incubadora de proyectos llamada </p></center>
+ <center><p>SISGAMEX.</p></center>
+</p>
+</center>
+<center>
+  <div class="main">
+    <h2>MANAGER DOCUMENTS.</h2>
+    <p>CONOCE NUESTRA PAGINA NAVEGA OTRA VES DE ELLA.</p>
+    <p>EL LUGAR DONDE PUEDES ALMACERNAR CONVENIOS DE </p>
+    <p>ALUMNOS DUAL.</p>
+</centre>
+<i class="fa fa-user-o"></i>
+
+<div id="myDIV"></div>
+<div id="myDIv"></div>
+<center>JESUS CORTES CAMACHO</center>
+<CENTER>PROGRAMADOR - DOCUMENTISTA</CENTER>
+</p>
+<p>
+<i class="fa fa-user-o"></i>
+<center>ANTONIO REYES MATA</center>
+<CENTER>DISEÑADOR GRAFICO</CENTER>
+</p>
+<p>
+<i class="fa fa-user-o"></i>
+<CENTER>TERESA BECERRIL ORTIZ</CENTER>
+<CENTER>ADMINISTRADORA - DOCUMENTISTA</CENTER>
+</p>
+<p>
+<i class="fa fa-user-o"></i>
+<center>GIL KEJIA ARMANDO</center>
+<center>PROGRAMADOR</center></p>
+<div id="myDIV"></div>
+
+
+
+
+
+</div>
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;">HOLA MANAGER DOCUMENTS.</div>
+
+<p>redes sociales: FACEBOOK</p>
+<footer>
+            <div class="contenedor3">
+                <div class="sociales">
+                    <a class="icon-facebook-squared" href="#"></a>
+                    <a class="icon-twitter-squared" href="#"></a>
+                    <a class="icon-instagram" href="#"></a>
+                    <a class="icon-gplus-circled" href="#"></a>
+                </div>
+                <center><p class="copy">Managed Documents &copy; 2017</p></center>
+            </div>
+        </footer>
+
+
+
+</body>
+</html> 

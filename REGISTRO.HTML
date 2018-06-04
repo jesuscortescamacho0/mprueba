@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<html>
+<head>
+<link rel="icon" href="manager/logo.ico">
+  <title>RESGISTRO</title>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+  </head>
+<body>
+   <center>REGISTRO</center>
+
+<a href="index.HTML">regresar</a>
+
+
+
+
+
+
+
+
+<form nombre="formulario" method="post"action="procesardatos.php"> </form>
+<form action="reg.php" method="post"></form>
+<div id="registro">
+
+<div class="from">
+      <form action="guardar.php" method="POST">
+
+
+        <p><CENTER>ESCRIBE TU NOMBRE:</center></p>
+        <p><center><LABEL for="nombre">Su nombre</LABEL></center></p>  
+        <p><center><input type="text" name="nombre" placeholder="Nombre" required></center>
+        <br>
+
+      <P> <CENTER>ESCRIBE TUS APELLIDOS:</center></p>
+      <center>  <LABEL for="nombre">Su apellido paterno</LABEL></center>
+      <center> <input type="text" name="nombre" placeholder="apellidos paterno" required></center>
+        <br>
+        </CENTER></P>
+
+      <center>  <LABEL for="nombre">Su apellido materno</LABEL></center>
+      <center> <input type="text" name="nombre" placeholder="apellidos materno" required></center>
+        <br>
+        </CENTER></P>
+
+      <center>  <LABEL for="nombre">escriba su usuario</LABEL></center>
+      <center> <input type="text" name="nombre" placeholder="escriba su usuario" required></center>
+        <br>
+        </CENTER></P>
+      <center><LABEL for="nombre">escriba su contraseña</LABEL></center>
+      <center> <input type="text" name="nombre" placeholder="escriba su contraseña" required></center>
+        <br>
+        </CENTER></P>
+
+<center>  <LABEL for="nombre">Repita su contraseña</LABEL></center>
+      <center> <input type="text" name="nombre" placeholder="escriba su contraseña" required></center>
+        <br>
+        </CENTER></P>
+
+
+
+</CENTER></P>
+<CENTER><P>ELIGE UNA OPCION SEGUN SEAS ALUMNO, MAESTRO DE CARRERA, SERVICIOS EDUCATIVOS O RECURSOS HUMANOS</P></CENTER>
+<center>
+        <script>
+    function mostrar(dato){
+        if(dato=="1"){
+            document.getElementById("nombre").style.display = "block";
+            document.getElementById("nombre").style.display = "block";
+            document.getElementById("apellidos").style.display = "none";
+            document.getElementById("edad").style.display = "none";
+        }
+        if(dato=="2"){
+            document.getElementById("nombre").style.display = "block";            
+            document.getElementById("nombre").style.display = "none";
+            document.getElementById("apellidos").style.display = "block";
+            document.getElementById("edad").style.display = "none";
+
+        }
+        if(dato=="3"){
+            document.getElementById("nombre").style.display = "block";
+            document.getElementById("nombre").style.display = "none";
+            document.getElementById("apellidos").style.display = "none";
+            document.getElementById("edad").style.display = "block";
+
+        }
+        if(dato=="4"){
+            document.getElementById("nombre").style.display = "block";
+            document.getElementById("nombre").style.display = "none";
+            document.getElementById("apellidos").style.display = "none";
+            document.getElementById("edad").style.display = "block";            
+        
+    }
+  }  
+    </script>
+</head>
+</center>
+<body>
+    <div class="row">
+            <div class="col-md-5 col-md-offset-3">
+<form action="" method="POST"  enctype="multipart/form-data" >
+                <div class="form-group" id="opciones" >
+                <center><label for="">Opciones:</label></center>
+                <center><input type="radio" name="opc" value="1" onchange="mostrar(this.value);">ALUMNO
+                    <input type="radio" name="opc" value="2"  onchange="mostrar(this.value);">MAESTRO DE CARRERA
+                    <input type="radio" name="opc" value="3"  onchange="mostrar(this.value);">RECURSOS HUMANOS
+                    <input type="radio" name="opc" value="3"  onchange="mostrar(this.value);">SERVICIOS EDUCATIVOS
+                </div></center>
+
+                <center>
+                <div class="form-group" id="nombre" style="display:none;">
+            <center><label for="">DIRECCION DE PLANTEL:</label></center>
+            <center><input type="text" class="form-control" name="nombre"  ></center>
+            <center><label for="">MATRICULA:</label></center>
+            <center><input type="text" class="form-control" name="nombre"  ></center>
+                </div></center>
+
+                
+                <div class="form-group" id="apellidos" style="display:none;">
+            <center><label for="">CARRERA QUE IMPARTE:</label></center>
+            <center><input type="text" class="form-control" name="apellidos"  ></center>
+            <center><label for="">DIRECCION DEL PLANTEL:</label></center>
+            <center><input type="text" class="form-control" name="apellidos"  ></center>        
+                </div>
+
+
+                <div class="form-group" id="edad" style="display:none;">
+            <center><label for="">DIRECCION DE LA EMPRESA:</label></center>
+            <center><input type="text" class="form-control" name="edad"  ></center> 
+
+
+              <div class="form-group" id="edad" style="display:none;">
+            <center><label for="">DIRECCION DE plantel:</label></center>
+            <center><input type="text" class="form-control" name="edad"  ></center>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+<script> 
+
+</script>
+<script>
+  mouseClicked = function() {
+    if (var u = "x" 
+        var c = "y") {
+
+    else(var u = "   "
+         var c = "   ");
+          
+</script>
+
+
+
+<script>
+//mandar formulario
+  function comprobar() {
+         var pulsado = false;//variable de comprobación
+         var opciones = document.formulario.estacion; //array de elementos
+         var elegido = -1; //número del elemento elegido en el array
+         for (i=0;i<opciones.length;i++) { //bucle de comprobación
+               if (opciones[i].checked == true) {
+               pulsado = true 
+               elegido = i //número del elemento elegido en el array
+               }
+             }
+         if (pulsado == true) { //mensaje de formulario válido
+            miOpcion = opciones[elegido].value
+            alert("Has elegido la opción: " + miOpcion + "\n El formulario ha sido enviado.")
+            }
+         else { //mensaje de formulario no válido.
+            alert("no has elegido ninguna opción. \n Elige una opción para que el formulario pueda ser enviado")
+
+
+            return false //el formulario no se envía.
+            }
+         }//fin de mensaje de arriba. empieza BOTON DE TERMINOS Y CONDICIONES DESPUES DE EL SCRIPT 
+</script>
+
+
+
+<form name="formulario2" action="#" onsubmit="return aceptar()">
+<center><input type="checkbox" name="condiciones" value="aceptado" />
+ He leido y acepto las condiciones del contrato <br/><br/></center>
+  <input type="submit" />
+</form>
+<script>function aceptar() {
+         var opcion = document.formulario2.condiciones; //acceso al botón
+         if (opcion.checked == true) { //botón seleccionado
+            alert("El Formulario ha sido enviado")
+            }
+         else {  //botón no seleccionado
+            alert("El formulario no ha podido enviarse. \n Debe aceptar las condiciones para poder enviar el formulario");
+            return false; //el formulario no se envia
+            }
+         }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+</body>
+</html>
